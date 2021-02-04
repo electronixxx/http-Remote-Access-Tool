@@ -1,0 +1,14 @@
+PS C:\Users\USER\source\repos\WindowsApp1\WindowsApp1\bin\Debug> dir
+
+
+    Directory: C:\Users\USER\source\repos\WindowsApp1\WindowsApp1\bin\Debug
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+-a----       12/10/2019   5:36 PM         192000 App.exe                                                               
+-a----       12/10/2019  12:58 AM            156 App.exe.config                                                        
+-a----       12/10/2019   5:36 PM          46592 App.pdb                                                               
+-a----       12/10/2019   5:36 PM            647 App.xml                                                               
+
+

